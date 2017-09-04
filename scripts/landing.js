@@ -1,4 +1,4 @@
-<script>
+
     var animatePoints = function() {
         var points = document.getElementsByClassName('point');
 
@@ -13,4 +13,3 @@
                 revealPoint(i);
           }
 };
-</script>
