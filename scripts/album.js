@@ -145,10 +145,11 @@ $(document).ready(function() {
           setCurrentAlbum(albumPicasso);
           $previousButton.click(previousSong);
           $nextButton.click(nextSong);
-          $togglePlayFromPlayerBar.click(clickHandler);
+          $togglePlayFromPlayerBar.click(togglePlayFromPlayerBar);
 });
 
 var togglePlayFromPlayerBar = function(){
+
   if (currentSoundFile.isPaused()) {
       $(this).html(pauseButtonTemplate);
       $('.main-controls .play-pause').html(playerBarPauseButton);
@@ -159,7 +160,6 @@ var togglePlayFromPlayerBar = function(){
         currentSoundFile.pause();
       }
 }
-
 
 
     //   var albums = [albumPicasso, albumMarconi];
